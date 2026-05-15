@@ -6,7 +6,11 @@ public class Main {
        //Next it should also recognize your access level -> do you have access to change and edit everything or is it only to see your credentials
        //Schedule vacations, enter hours worked, see next payday (it would be cool if it could automatically get the date of today)
        //Emphasize choice -> the prior system I created led you through different things -> you couldn't choose if you wanted to do this or that
-    login()
+    //login()
+loginInformation attempt = new loginInformation(false, 1000, "employee");
+System.out.println(attempt.loginSuccessful);
+System.out.println(attempt.loginID);
+System.out.println(attempt.accessLevel);
 
 
 
@@ -14,15 +18,19 @@ public class Main {
     
     public static char menu(){
         Scanner scanner = new Scanner(System.in);
-        
+        return 'A';
     }
 }
 class loginInformation{
     //What do I actually want to return with this? I am using an object to be able to return and access multiple values
     //1. A boolean value that says if login has actually been successful (that there is a password match). 2. The ID for the person logging in. 3. The access level of the person logging in (administrator, hiring manager, employee, etc.)
-    loginInformation(){
-        this.//UNFINISHED
+    boolean loginSuccessful = false;
+    int loginID = 1000;
+    String accessLevel = "employee"; // default is lowest level so that they don't actually have access to anything unless they login
+    
+    loginInformation(boolean loginSuccessful, int loginID, String accessLevel){
+        this.loginSuccessful = loginSuccessful;
+        this.loginID = loginID;
+        this.accessLevel = accessLevel;
     }
-    
-    
 }
