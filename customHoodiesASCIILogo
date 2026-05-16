@@ -1,0 +1,12 @@
+class Main {
+    public static void main(String[] args) {
+  //printing out my logo
+        //
+        System.out.println("    | *****   *    *    ****   *****   *****   *      *         *   *   *****   *****   ***     ***   ****   **** |    ");
+        System.out.println("   || *       *    *    *        *     *   *   **    **         *   *   *   *   *   *   *  *     *    *      *    ||   ");
+        System.out.println("  ||| *       *    *    ****     *     *   *   * *  * *         *****   *   *   *   *   *   *    *    ****   **** |||  ");
+        System.out.println(" |||| *       *    *       *     *     *   *   *   *  *         *   *   *   *   *   *   *  *     *    *         * |||| ");
+        System.out.println("||||| *****    ****     ****     *     *****   *      *         *   *   *****   *****   ***     ***   ****   **** |||||");
+        //    }
+}
+}
